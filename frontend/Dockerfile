@@ -2,7 +2,7 @@
 FROM node AS build
 
 
-RUN mkdir -p /home/ToDo
+RUN sudo mkdir -p /home/ToDo
 
 
 WORKDIR /home/ToDo
@@ -11,13 +11,13 @@ WORKDIR /home/ToDo
 COPY package.json /home/ToDo
 
 
-RUN npm install
+RUN sudo npm install
 
 
 COPY . /home/ToDo
 
 
-RUN npm install -g @angular/cli 
+RUN sudo npm install -g @angular/cli 
 
 
 EXPOSE 4200
