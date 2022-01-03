@@ -5,4 +5,4 @@ COPY package*.json /home/backend
 RUN npm install
 COPY . .
 EXPOSE 3000
-CMD ["node", "/home/backend/index.js"]
+CMD ["node", "/home/ToDo/index.js"]
