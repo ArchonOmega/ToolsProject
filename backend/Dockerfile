@@ -1,7 +1,7 @@
 FROM node
-RUN mkdir -p /home/ToDo
-WORKDIR /home/ToDo
-COPY package*.json /home/ToDo
+RUN mkdir -p /home/backend
+WORKDIR /home/backend
+COPY package*.json /home/backend
 RUN npm install
 COPY . .
 EXPOSE 3000
