@@ -2,19 +2,19 @@
 FROM node AS build
 
 
-RUN mkdir -p /usr/src/app/frontend
+RUN mkdir -p /home/ToDo
 
 
-WORKDIR /usr/src/app/frontend
+WORKDIR /home/frontendRun
 
 
-COPY package.json /usr/src/app/frontend
+COPY package.json /home/ToDo
 
 
 RUN npm install
 
 
-COPY . /usr/src/app/frontend
+COPY . /home/ToDo
 
 
 RUN npm install -g @angular/cli 
