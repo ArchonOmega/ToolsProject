@@ -5,7 +5,7 @@ FROM node AS build
 RUN mkdir -p /home/ToDo
 
 
-WORKDIR /home/frontendRun
+WORKDIR /home/ToDo
 
 
 COPY package.json /home/ToDo
