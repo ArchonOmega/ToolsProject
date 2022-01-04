@@ -5,7 +5,7 @@ var bodyparser = require('body-parser');
 var User = require('./models/User');
 
 var cors = require("cors");
-var db=mongoose.connect('mongodb://admin:adminpass@172.30.30.44:27017/meanAuthAngular/?directConnection=true&serverSelectionTimeoutMS=2000',function(err,response)
+var db=mongoose.connect('mongodb://medhat:medhatpass@' + process.env.IP + ':27017/meanAuthAngular?directConnection=true&serverSelectionTimeoutMS=2000',function(err,response)
 {
     if(err) console.log("There was an error connecting to MongoDB.");
     //console.log(err);
