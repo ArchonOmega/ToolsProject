@@ -37,6 +37,7 @@ app.post('/register',(req,res)=>{
         if(err) {
             console.log("There was an error in adding the user to database.");
             res.send({success: "Failed to add user", status:500});
+            console.log(err);
             return;
         }
         return res.send({success: "Successfully added a new user", status:200});
