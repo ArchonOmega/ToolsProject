@@ -8,7 +8,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   registerUser(user: any){
-    this.http.post('http://backend13-notes-list.apps.eu45.prod.nextcle.com/register', user).subscribe(res => {
+    this.http.post('http://backend-notes-list2.apps.eu45.prod.nextcle.com/register', user).subscribe(res => {
       console.log(res);
     })
     
